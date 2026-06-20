@@ -67,6 +67,17 @@ section{padding:72px 24px}
 .feature-card h3{font-size:16px;font-weight:700;margin-bottom:8px}
 .feature-card p{font-size:14px;color:var(--muted);line-height:1.7}
 
+.plan-guide-section{background:var(--bg2);border-bottom:1px solid var(--border)}
+.guide-cards{display:flex;flex-direction:column;gap:16px;margin-top:32px}
+.guide-card{display:grid;grid-template-columns:1fr 32px 1fr;align-items:center;gap:16px;background:var(--white);border:1px solid var(--border);border-radius:12px;padding:20px 24px}
+.guide-q{font-size:14px;color:var(--muted);line-height:1.6}
+.guide-arrow{font-size:20px;color:var(--green);font-weight:700;text-align:center}
+.guide-ans{font-size:15px;line-height:1.6}
+.guide-ans strong{display:block;font-size:16px;margin:4px 0 2px}
+.guide-ans .guide-note{font-size:12px;color:var(--muted)}
+.guide-tag{display:inline-block;background:var(--green);color:#fff;font-size:11px;font-weight:700;padding:2px 8px;border-radius:4px;margin-bottom:4px;letter-spacing:0.05em}
+.guide-note-bottom{margin-top:24px;font-size:14px;color:var(--muted);text-align:center}
+@media(max-width:640px){.guide-card{grid-template-columns:1fr;gap:8px}.guide-arrow{display:none}}
 .plans-section{background:var(--bg)}
 .plans-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px;margin-top:40px}
 .plan-card{background:var(--white);border:1px solid var(--border);border-radius:12px;overflow:hidden}
@@ -273,6 +284,33 @@ footer{background:var(--text);padding:32px 24px}
         <p>個人宅だけでなく、オフィス・店舗・管理物件の定期清掃も承ります。清掃の手間を削減して、本業に集中できる環境をつくります。</p>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- プラン選び方ガイド -->
+<section id="plan-guide" class="plan-guide-section">
+  <div class="section-inner">
+    <div class="section-label">Which Plan?</div>
+    <h2 class="section-title">どのプランか迷ったら</h2>
+    <p class="section-desc">3つの質問で、あなたに合ったプランの目安がわかります。</p>
+    <div class="guide-cards">
+      <div class="guide-card">
+        <div class="guide-q">掃除の手間を減らしたい・普段使いの清潔を保ちたい</div>
+        <div class="guide-arrow">→</div>
+        <div class="guide-ans"><span class="guide-tag">おすすめ</span><strong>お掃除定期便</strong><br><span class="guide-note">月1〜週1で選べる基本プラン</span></div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-q">留守中に任せたい・鍵を預けて不在対応してほしい</div>
+        <div class="guide-arrow">→</div>
+        <div class="guide-ans"><span class="guide-tag">おすすめ</span><strong>定期便 Plus+</strong><br><span class="guide-note">鍵預かり・見回り付き</span></div>
+      </div>
+      <div class="guide-card">
+        <div class="guide-q">ペットがいる／高齢の家族が一人暮らしをしている</div>
+        <div class="guide-arrow">→</div>
+        <div class="guide-ans"><span class="guide-tag">おすすめ</span><strong>ペット／シルバープラン</strong><br><span class="guide-note">様子確認・家族報告が込み</span></div>
+      </div>
+    </div>
+    <p class="guide-note-bottom">迷ったままでもOKです。お電話・LINEでヒアリングしてからご提案します。</p>
   </div>
 </section>
 
